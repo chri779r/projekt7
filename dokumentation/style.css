@@ -96,9 +96,13 @@ font-size: 1.1em;}
 #design_section {
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
-
+#design_section img {
+    width: 50%;
+    height: 50%;
+}
 
 
 
