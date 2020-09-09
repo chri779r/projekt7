@@ -1,0 +1,108 @@
+/*---------------------------- GENERELT START-------------------------*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+img {
+width: 100%
+}
+
+
+h1 {
+   font-family: 'Dancing Script', cursive;
+}
+
+
+
+p {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+
+/*---------------------------- GENERELT SLUT-------------------------*/
+
+
+
+
+
+/*---------------------------- HEADER START-------------------------*/
+a {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    background: darkgrey;
+    padding-left: 10px;
+    padding-right: 10px;
+        color: black;
+    text-decoration: inherit;
+        margin-left: 40px;
+}
+
+
+nav {
+    text-align: center;
+        margin-bottom: 25px;
+}
+
+
+#header_overskrift {
+    font-size: 4em;
+    text-align: center;
+
+}
+
+#header_under {
+text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    margin-top: -6px;
+}
+/*---------------------------- HEADER SLUT -------------------------*/
+
+
+
+
+/*---------------------------- FORSIDE START-------------------------*/
+#forside_section {
+    padding: 25px;
+}
+
+#forside_overskrift {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#forside_tekst {
+font-size: 1.1em;}
+
+
+
+
+/*---------------------------- FORSIDE SLUT-------------------------*/
+
+
+
+
+
+
+/*---------------------------- DESIGN START-------------------------*/
+#header_design {
+    border-bottom: 2px solid black;
+}
+
+
+#design_section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+/*---------------------------- DESIGN SLUT-------------------------*/
