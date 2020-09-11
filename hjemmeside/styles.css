@@ -8,6 +8,11 @@ body {
     background: #fff;
 }
 
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /********************************** NAVIGATION ********************************/
 
 nav {
@@ -19,7 +24,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    /*    z-index: 1;*/
 }
 
 .logo {
@@ -55,8 +60,7 @@ nav-links a:hover {
 }
 
 
-.burger,
-.undermenu {
+.burger {
     display: none;
 }
 
@@ -144,7 +148,8 @@ nav-links a:hover {
 
 footer {
     background: #7CB2C2;
-    position: static;
+    position: fixed;
+    width: 100vw;
     bottom: 0;
 }
 
