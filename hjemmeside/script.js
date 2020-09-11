@@ -34,6 +34,7 @@ navSlide();
 
 
 
+<<<<<<< HEAD
 let filter = "alle";
 let personer;
 document.addEventListener("DOMContentLoaded", loadJSON)
@@ -45,6 +46,19 @@ async function loadJSON() {
     visPersoner();
     //            addEventlistenersToButtons();
 }
+=======
+        let filter = "alle";
+        let personer;
+        document.addEventListener("DOMContentLoaded", loadJSON)
+
+        async function loadJSON() {
+            const JSONData = await
+            fetch("https://spreadsheets.google.com/feeds/list/1ZRMaFLVTV6xPcnaDhh13gnGv5W6iWgllziLCfYcsZGA/od6/public/values?alt=json");
+            personer = await JSONData.json();
+            visPersoner();
+            addEventlistenersToButtons();
+        }
+>>>>>>> opskriftmenu
 
 
 
@@ -69,24 +83,32 @@ function visPersoner() {
 function visDeltaljer(person) {
     popop.style.display = "block";
     popop.querySelector("h2").textContent = person.gsx$navn.$t;
+<<<<<<< HEAD
     //    popop.querySelector("h2").textContent = person.gsx$efternavn.$t;
     popop.querySelector(".lang").textContent = person.gsx$lang.$t;
     popop.querySelector(".pris").textContent = person.gsx$pris.$t;
     //    popop.querySelector("img").src = person.gsx$billede.$t;
     popop.querySelector("img").src = "imgs" + navn.gsx$billede.$t + ".jpg";
+=======
+//    popop.querySelector("h2").textContent = person.gsx$efternavn.$t;
+//    popop.querySelector(".lang").textContent = person.gsx$lang.$t;
+//    popop.querySelector(".pris").textContent = person.gsx$pris.$t;
+//    popop.querySelector("img").src = person.gsx$billede.$t;
+   popop.querySelector("img").src = "imgs" + navn.gsx$billede.$t + ".jpg";
+>>>>>>> opskriftmenu
 
 }
 
 
 
-//     document.querySelector("#luk").addEventListener("click", ()=>popop.style.display="none");
-//
-//        function addEventlistenersToButtons() {
-//            document.querySelectorAll(".filter").forEach((btn) => {
-//                btn.addEventListener("click", filterBTNs);
-//
-//            });
-//        }
+     document.querySelector("#luk").addEventListener("click", ()=>popop.style.display="none");
+
+        function addEventlistenersToButtons() {
+            document.querySelectorAll(".filter").forEach((btn) => {
+                btn.addEventListener("click", filterBTNs);
+
+            });
+        }
 
 function filterBTNs() {
     filter = this.dataset.kategori;
