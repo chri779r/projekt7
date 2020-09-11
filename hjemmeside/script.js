@@ -34,7 +34,7 @@ navSlide();
 
 
 
-<<<<<<< HEAD
+
 let filter = "alle";
 let personer;
 document.addEventListener("DOMContentLoaded", loadJSON)
@@ -46,7 +46,7 @@ async function loadJSON() {
     visPersoner();
     //            addEventlistenersToButtons();
 }
-=======
+
         let filter = "alle";
         let personer;
         document.addEventListener("DOMContentLoaded", loadJSON)
@@ -58,7 +58,7 @@ async function loadJSON() {
             visPersoner();
             addEventlistenersToButtons();
         }
->>>>>>> opskriftmenu
+
 
 
 
