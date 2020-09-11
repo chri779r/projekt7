@@ -1,16 +1,11 @@
 * {
-    margin: 0px auto;
+    margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 body {
     background: #fff;
-}
-
-section {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 /********************************** NAVIGATION ********************************/
@@ -151,13 +146,14 @@ footer {
     position: fixed;
     width: 100vw;
     bottom: 0;
+    padding: 20px;
 }
 
 .fcontainer {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    margin: 10px auto;
+    margin: auto;
 }
 
 .box2 img {
