@@ -144,13 +144,18 @@ nav-links a:hover {
 
 footer {
     background: #7CB2C2;
-    min-height: 300px;
+    position: static;
+    bottom: 0;
 }
 
 .fcontainer {
     display: grid;
     grid-gap: 10px;
-    grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin: 10px auto;
+}
 
+.box2 img {
+    height: 30px;
+    width: 30px;
 }
