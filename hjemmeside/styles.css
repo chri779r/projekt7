@@ -268,19 +268,21 @@ footer {
 /***************************************** OPSKRIFT-SIDE ********************************/
 
 .content {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-template-rows: repeat (minmax(150px, auto));
-    grid-gap: 20px;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 10px;
 
+
+
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 240px;
 }
 
-
 .content img {
+    object-fit: cover;
     width: 100%;
-    object-fit: contain;
     height: 100%;
 }
 
