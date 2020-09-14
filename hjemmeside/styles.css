@@ -39,7 +39,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-        z-index: 1;
+    z-index: 1;
 }
 
 /*
@@ -165,7 +165,7 @@ nav-links a:hover {
 
 footer {
     background: #7CB2C2;
-/*    position: fixed;*/
+    /*    position: fixed;*/
     width: 100vw;
     bottom: 0;
     padding: 20px;
@@ -197,7 +197,7 @@ footer {
 #splash_box {
     padding: 20px;
     padding-bottom: 40px;
-        width: 60%;
+    width: 60%;
     position: relative;
     left: 60px;
 }
@@ -207,20 +207,20 @@ footer {
 
 #forside_billeder {
     display: grid;
- grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-/*    grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /*    grid-template-columns: repeat(3, 1fr);*/
 
     grid-auto-rows: 1fr;
     grid-gap: 10px;
     padding: 10px;
-     padding-bottom: 40px;
+    padding-bottom: 40px;
     justify-items: center;
 
 }
 
 
 #forside_billeder img {
-object-fit: cover;
+    object-fit: cover;
 
 
 }
@@ -239,7 +239,7 @@ object-fit: cover;
 }
 
 .hummus {
-grid-column: 3/4;
+    grid-column: 3/4;
     grid-row: 1/3;
 }
 
@@ -255,7 +255,7 @@ grid-column: 3/4;
 
 
 .logo img {
-       width: 20%;
+    width: 20%;
     position: absolute;
     top: 15px;
     left: 50px;
@@ -269,20 +269,22 @@ grid-column: 3/4;
 
 .content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: repeat (minmax(150px, auto));
     grid-gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+
 }
 
 
 .content img {
-    width: 40%;
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
 }
-
 
 
 .menu {
-padding-top: 20vh;
+    padding-top: 20vh;
 }
-
-
-
