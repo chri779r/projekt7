@@ -9,6 +9,23 @@ body {
     padding-top: 100px;
 }
 
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Roboto Slab', serif;
+*/
+
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+}
+
+
+p {
+    font-family: 'Roboto Slab', serif;
+}
+
+
 /********************************** NAVIGATION ********************************/
 
 nav {
@@ -144,7 +161,7 @@ nav-links a:hover {
 
 footer {
     background: #7CB2C2;
-    position: fixed;
+/*    position: fixed;*/
     width: 100vw;
     bottom: 0;
     padding: 20px;
@@ -166,16 +183,54 @@ footer {
 
 
 
+/***************************************** FORSIDE ********************************/
+
+#splash img {
+    width: 100%;
+}
+
+
+#splash_box {
+    padding: 20px;
+    padding-bottom: 40px;
+}
 
 
 
-section {
+
+#forside_billeder {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+     padding-bottom: 40px;
+}
+
+
+#forside_billeder img {
+width: 100%;
+
+}
+
+
+#forside_billeder h3 {
+
+}
+
+
+
+
+
+
+/***************************************** OPSKRIFT-SIDE ********************************/
+
+.content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 20px;
 }
 
 
-img {
+.content img {
     width: 50%;
 }

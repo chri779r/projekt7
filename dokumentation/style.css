@@ -20,7 +20,15 @@ p {
     font-family: 'Roboto Slab', serif;
 }
 
+#overskrift {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
 
+
+#tekst {
+font-size: 1.1em;
+}
 
 /*---------------------------- GENERELT SLUT-------------------------*/
 
@@ -69,17 +77,6 @@ text-align: center;
     padding: 25px;
 }
 
-#forside_overskrift {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-#forside_tekst {
-font-size: 1.1em;}
-
-
-
-
 /*---------------------------- FORSIDE SLUT-------------------------*/
 
 
@@ -93,7 +90,7 @@ font-size: 1.1em;}
 }
 
 
-#design_section {
+#design_section, #design_section2, #design_section3, #design_section4, #design_section5 {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
@@ -105,6 +102,20 @@ font-size: 1.1em;}
 }
 
 
+#design_section2 img {
+    width: 33%;
+    height: 50%;
+}
+
+#design_section3 img {
+    width: 30%;
+    height: 50%;
+}
+
+#design_section5 img {
+    width: 30%;
+    height: 50%;
+}
 
 
 
