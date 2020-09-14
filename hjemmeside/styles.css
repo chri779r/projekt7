@@ -6,7 +6,7 @@
 
 body {
     background: #fff;
-    padding-top: 100px;
+    padding-top: 13vh;
 }
 
 /*
@@ -24,6 +24,8 @@ h1 {
 p {
     font-family: 'Roboto Slab', serif;
 }
+
+
 
 
 /********************************** NAVIGATION ********************************/
@@ -205,13 +207,15 @@ footer {
 
 #forside_billeder {
     display: grid;
-/*    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));*/
-    grid-template-columns: repeat(3, 1fr);
+ grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+/*    grid-template-columns: repeat(3, 1fr);*/
+
     grid-auto-rows: 1fr;
     grid-gap: 10px;
     padding: 10px;
      padding-bottom: 40px;
     justify-items: center;
+
 }
 
 
@@ -220,6 +224,8 @@ object-fit: cover;
 
 
 }
+
+
 
 
 .banan {
@@ -269,5 +275,14 @@ grid-column: 3/4;
 
 
 .content img {
-    width: 50%;
+    width: 40%;
 }
+
+
+
+.menu {
+padding-top: 20vh;
+}
+
+
+
