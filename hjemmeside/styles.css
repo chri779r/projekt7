@@ -37,9 +37,10 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    /*    z-index: 1;*/
+        z-index: 1;
 }
 
+/*
 .logo {
     color: #F2F2F2;
     text-transform: uppercase;
@@ -47,6 +48,7 @@ nav {
     letter-spacing: 5px;
     font-size: 20px;
 }
+*/
 
 .nav-links {
     display: flex;
@@ -193,6 +195,9 @@ footer {
 #splash_box {
     padding: 20px;
     padding-bottom: 40px;
+        width: 60%;
+    position: relative;
+    left: 60px;
 }
 
 
@@ -200,24 +205,56 @@ footer {
 
 #forside_billeder {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+/*    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
     grid-gap: 10px;
     padding: 10px;
      padding-bottom: 40px;
+    justify-items: center;
 }
 
 
 #forside_billeder img {
-width: 100%;
+object-fit: cover;
+
 
 }
 
 
-#forside_billeder h3 {
+.banan {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.tofu {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.hummus {
+grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+
+.box {
+    width: 23vw;
+    height: 35vh;
 
 }
 
 
+
+
+
+.logo img {
+       width: 20%;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    z-index: 1;
+}
 
 
 
