@@ -61,7 +61,11 @@ function visPersoner() {
             const minKlon = templatePointer.cloneNode(true).content;
             minKlon.querySelector("h2").textContent = person.gsx$navn.$t;
             minKlon.querySelector("img").src = "imgs/small/" + person.gsx$billede.$t + ".png";
-            minKlon.querySelector("article").addEventListener("click", () => visDeltaljer(person));
+//            minKlon.querySelector("article").addEventListener("click", () => visDeltaljer(person));
+            minKlon.querySelector("article").addEventListener("click", function() {
+                visDetaljer(person)
+            });
+
             listPointer.appendChild(minKlon);
         }
     })
@@ -69,24 +73,11 @@ function visPersoner() {
 
 
 
-function visDeltaljer(person) {
-    popop.style.display = "block";
-    popop.querySelector("h2").textContent = person.gsx$navn.$t;
-    //    popop.querySelector("h2").textContent = person.gsx$efternavn.$t;
-    popop.querySelector(".lang").textContent = person.gsx$lang.$t;
-    popop.querySelector(".pris").textContent = person.gsx$pris.$t;
-    //    popop.querySelector("img").src = person.gsx$billede.$t;
-    popop.querySelector("img").src = "imgs" + navn.gsx$billede.$t + ".jpg";
-    //    popop.querySelector("h2").textContent = person.gsx$efternavn.$t;
-    //    popop.querySelector(".lang").textContent = person.gsx$lang.$t;
-    //    popop.querySelector(".pris").textContent = person.gsx$pris.$t;
-    //    popop.querySelector("img").src = person.gsx$billede.$t;
-    popop.querySelector("img").src = "imgs" + navn.gsx$billede.$t + ".jpg";
+function visDetaljer(person) {
+            location.href = `single_view.html?id=${person.gsx$id.$t}`;
+            console.log("PERSON", person.gsx$navn.$t);
 
-
-}
-
-
+        }
 
 //     document.querySelector("#luk").addEventListener("click", ()=>popop.style.display="none");
 
@@ -106,3 +97,5 @@ function filterBTNs() {
     this.classList.add("valgt");
     visPersoner();
 }
+
+
