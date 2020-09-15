@@ -430,6 +430,14 @@ footer {
     max-width: 1200px;
 }
 
+#opskrifter_1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#opskrifter_2 {
+    padding: 50px;
+}
 
 #single_view h2 {
 
@@ -438,5 +446,3 @@ footer {
     text-align: center;
     margin-bottom: 40px;
 }
-
-#single_view p {}
