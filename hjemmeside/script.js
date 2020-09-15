@@ -29,13 +29,7 @@ function setStyleLink(el, index) {
 navSlide();
 
 
-
-
-
-
-
-
-
+// JSON
 let filter = "alle";
 let personer;
 document.addEventListener("DOMContentLoaded", loadJSON)
@@ -49,8 +43,6 @@ async function loadJSON() {
 }
 
 
-
-
 function visPersoner() {
     const templatePointer = document.querySelector("template");
     const listPointer = document.querySelector(".content");
@@ -61,8 +53,8 @@ function visPersoner() {
             const minKlon = templatePointer.cloneNode(true).content;
             minKlon.querySelector("h2").textContent = person.gsx$navn.$t;
             minKlon.querySelector("img").src = "imgs/small/" + person.gsx$billede.$t + ".png";
-//            minKlon.querySelector("article").addEventListener("click", () => visDeltaljer(person));
-            minKlon.querySelector("article").addEventListener("click", function() {
+            //            minKlon.querySelector("article").addEventListener("click", () => visDeltaljer(person));
+            minKlon.querySelector("article").addEventListener("click", function () {
                 visDetaljer(person)
             });
 
@@ -72,12 +64,11 @@ function visPersoner() {
 }
 
 
-
 function visDetaljer(person) {
-            location.href = `single_view.html?id=${person.gsx$id.$t}`;
-            console.log("PERSON", person.gsx$navn.$t);
+    location.href = `single_view.html?id=${person.gsx$id.$t}`;
+    console.log("PERSON", person.gsx$navn.$t);
 
-        }
+}
 
 //     document.querySelector("#luk").addEventListener("click", ()=>popop.style.display="none");
 
@@ -97,5 +88,3 @@ function filterBTNs() {
     this.classList.add("valgt");
     visPersoner();
 }
-
-

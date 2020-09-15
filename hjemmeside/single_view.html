@@ -15,8 +15,8 @@
 
 
         <nav role="navigation">
-           <div class="logo">
-               <a href="index.html"> <img src="logo.png" alt=""></a>
+            <div class="logo">
+                <a href="index.html"> <img src="logo.png" alt=""></a>
 
             </div>
             <ul class="nav-links">
@@ -40,10 +40,10 @@
 
 
 
-           <article id="single_view">
+        <article id="single_view">
             <h2></h2>
             <img src="" alt="">
-            <li> </li>
+            <div id="liste"></div>
             <p> </p>
             <button>Tilbage</button>
         </article>
@@ -78,8 +78,7 @@
     </footer>
 
     <script>
-
-     const urlParams = new URLSearchParams(window.location.search);
+        const urlParams = new URLSearchParams(window.location.search);
         const id = urlParams.get("id");
         document.addEventListener("DOMContentLoaded", loadJSON)
 
@@ -101,11 +100,13 @@
                     console.log(person);
                     const myArticle = document.querySelector("article");
                     myArticle.querySelector("h2").textContent = person.gsx$navn.$t;
-                    myArticle.querySelector("li").textContent = person.gsx$opskrift.$t;
+                    myArticle.querySelector("#liste").innerHTML = person.gsx$opskrift.$t;
                     myArticle.querySelector("p").textContent = person.gsx$fremgangsmåde.$t;
                     myArticle.querySelector("img").src = "imgs/small/" + person.gsx$billede.$t + ".png";
 
-                    document.querySelector("button").addEventListener("click",function(){history.back()})
+                    document.querySelector("button").addEventListener("click", function() {
+                        history.back()
+                    })
 
                 }
             })
@@ -113,7 +114,7 @@
 
         }
 
-
-
     </script>
-</body></html>
+</body>
+
+</html>

@@ -421,16 +421,13 @@ footer {
         width: 90%;
     }
 }
-<<<<<<< HEAD
-=======
-
-
 
 /***************************************** SINGLEVIEW-SIDE ********************************/
 
 #single_view {
-
-    padding-top: 100px;
+    padding-top: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 
@@ -438,9 +435,8 @@ footer {
 
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-#single_view p {
-
-}
->>>>>>> json_singleview
+#single_view p {}
