@@ -60,7 +60,7 @@ function visPersoner() {
             console.log(person);
             const minKlon = templatePointer.cloneNode(true).content;
             minKlon.querySelector("h2").textContent = person.gsx$navn.$t;
-            minKlon.querySelector("img").src = "imgs/" + person.gsx$billede.$t + ".jpg";
+            minKlon.querySelector("img").src = "imgs/small/" + person.gsx$billede.$t + ".png";
             minKlon.querySelector("article").addEventListener("click", () => visDeltaljer(person));
             listPointer.appendChild(minKlon);
         }
