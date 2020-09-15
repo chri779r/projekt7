@@ -44,7 +44,7 @@ nav {
 
 /*
 .logo {
-    color: #F2F2F2;
+    color: #FFF9F0;
     text-transform: uppercase;
     font-family: 'oswald', sans-serif;
     letter-spacing: 5px;
@@ -59,11 +59,12 @@ nav {
 }
 
 .nav-links a {
-    color: #F2F2F2;
+    color: #FFF9F0;
     text-decoration: none;
-    font-family: 'oswald', sans-serif;
+    font-family: 'Dancing Script', cursive;
     padding: 10px;
-    font-size: 14px;
+    font-size: 1.07rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
@@ -73,7 +74,7 @@ nav {
 
 nav-links a:hover {
     color: rgb(81, 85, 115);
-    background-color: #F2F2F2;
+    background-color: #FFF9F0;
 }
 
 
@@ -82,7 +83,7 @@ nav-links a:hover {
 }
 
 .burger div {
-    background-color: #F2F2F2;
+    background-color: #FFF9F0;
     width: 25px;
     height: 3px;
     margin: 5px;
@@ -301,6 +302,12 @@ footer {
     padding-bottom: 10px;
 }
 
+#info h2 {
+    font-family: 'Roboto-slab', serif;
+    font-size: 1.2rem;
+
+}
+
 
 
 
@@ -316,28 +323,29 @@ footer {
 
 
 #blog1 {
-display: flex;
+    display: flex;
     flex-wrap: wrap;
-        padding-top: 20px;
+    padding-top: 20px;
 }
 
 
 #blog2 {
-display: flex;
+    display: flex;
     flex-wrap: wrap;
-        padding-top: 20px;
+    padding-top: 20px;
     border-bottom: 2px solid black;
 }
 
 
 #blog p {
-  width: 56%;
+    width: 56%;
     margin-right: 20px;
 }
 
 
-#blog1 img, #blog2 img {
-width: 40%;
+#blog1 img,
+#blog2 img {
+    width: 40%;
     padding-right: 20px;
     padding-bottom: 20px;
     height: 50vh;
@@ -352,11 +360,13 @@ width: 40%;
         display: grid;
     }
 
-    #blog1 img, #blog2 img {
-           min-width: 100%;
+    #blog1 img,
+    #blog2 img {
+        min-width: 100%;
     }
 
-    #blog1 p, #blog2 p {
+    #blog1 p,
+    #blog2 p {
         width: 90%;
     }
 }
@@ -374,21 +384,21 @@ width: 40%;
 
 
 #ommig {
-display: flex;
+    display: flex;
     flex-wrap: wrap;
-        padding-top: 20px;
+    padding-top: 20px;
 }
 
 
 
 #ommig p {
-  width: 56%;
+    width: 56%;
     margin-right: 20px;
 }
 
 
 #ommig img {
-width: 40%;
+    width: 40%;
     padding-right: 20px;
     padding-bottom: 20px;
     height: 50vh;
@@ -404,11 +414,10 @@ width: 40%;
     }
 
     #ommig img {
-           min-width: 100%;
+        min-width: 100%;
     }
 
-    #ommig p{
+    #ommig p {
         width: 90%;
     }
 }
-
