@@ -6,12 +6,12 @@
 
 
 img {
-width: 100%
+    width: 100%
 }
 
 
 h1 {
-   font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive;
 }
 
 
@@ -27,7 +27,7 @@ p {
 
 
 #tekst {
-font-size: 1.1em;
+    font-size: 1.1em;
 }
 
 /*---------------------------- GENERELT SLUT-------------------------*/
@@ -43,15 +43,15 @@ a {
     background: darkgrey;
     padding-left: 10px;
     padding-right: 10px;
-        color: black;
+    color: black;
     text-decoration: inherit;
-        margin-left: 40px;
+    margin-left: 40px;
 }
 
 
 nav {
     text-align: center;
-        margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 
@@ -62,11 +62,12 @@ nav {
 }
 
 #header_under {
-text-align: center;
+    text-align: center;
     font-size: 1.2em;
     margin-bottom: 40px;
     margin-top: -6px;
 }
+
 /*---------------------------- HEADER SLUT -------------------------*/
 
 
@@ -90,7 +91,11 @@ text-align: center;
 }
 
 
-#design_section, #design_section2, #design_section3, #design_section4, #design_section5 {
+#design_section,
+#design_section2,
+#design_section3,
+#design_section4,
+#design_section5 {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
@@ -121,3 +126,27 @@ text-align: center;
 
 
 /*---------------------------- DESIGN SLUT-------------------------*/
+
+
+/*------------------------ DESIGN GUIDE START-----------------------*/
+
+#design_guide {
+    padding: 20px;
+}
+
+#design_guide img {
+    width: 100%;
+}
+
+.logo,
+.font,
+.farver,
+.billedestil {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+
+
+/*------------------------ DESIGN GUIDE SLUT-----------------------*/
