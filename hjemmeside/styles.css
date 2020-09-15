@@ -412,3 +412,22 @@ width: 40%;
     }
 }
 
+
+
+/***************************************** SINGLEVIEW-SIDE ********************************/
+
+#single_view {
+
+    padding-top: 100px;
+}
+
+
+#single_view h2 {
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+}
+
+#single_view p {
+
+}
