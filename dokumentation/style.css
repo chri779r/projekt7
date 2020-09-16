@@ -147,6 +147,10 @@ nav {
     padding-bottom: 20px;
 }
 
+.logo {
+    flex-direction: column;
+}
+
 
 
 /*------------------------ DESIGN GUIDE SLUT-----------------------*/
