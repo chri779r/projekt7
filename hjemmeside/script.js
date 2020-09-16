@@ -29,21 +29,23 @@ function setStyleLink(el, index) {
 navSlide();
 
 
-// JSON
+// Her defineres filter og personer ved let-variablen, og der anmodes om at få loadet json
 let filter = "alle";
 let personer;
 document.addEventListener("DOMContentLoaded", loadJSON)
 
+//Her bliver functionen loadJSON defineret, det gøres den ved at indhente data fra et spreadsheet - bliver derudover sent videre til funktionen visOpskrifter
 async function loadJSON() {
     const JSONData = await
     fetch("https://spreadsheets.google.com/feeds/list/1ZRMaFLVTV6xPcnaDhh13gnGv5W6iWgllziLCfYcsZGA/od6/public/values?alt=json");
     personer = await JSONData.json();
-    visPersoner();
+    visOpskrifter();
     addEventlistenersToButtons();
 }
 
 
-function visPersoner() {
+//visOpskrifter indsætter hver opskrift i html - derudover bliver det defineret at der skal vises navn og billede
+function visOpskrifter() {
     const templatePointer = document.querySelector("template");
     const listPointer = document.querySelector(".content");
     listPointer.innerHTML = "";
@@ -64,14 +66,14 @@ function visPersoner() {
 }
 
 
-function visDetaljer(person) {
-    location.href = `single_view.html?id=${person.gsx$id.$t}`;
-    console.log("PERSON", person.gsx$navn.$t);
+//Her sørges der for at ved klik på en opskrift, så loades et nyt vindue
+function visDetaljer(opskrift) {
+    location.href = `single_view.html?id=${opskrift.gsx$id.$t}`;
+    console.log("opskrift", opskrift.gsx$navn.$t);
 
 }
 
-//     document.querySelector("#luk").addEventListener("click", ()=>popop.style.display="none");
-
+//Her ligges der en eventlistner på filtreringsknapperne
 function addEventlistenersToButtons() {
     document.querySelectorAll(".filter").forEach((btn) => {
         btn.addEventListener("click", filterBTNs);
@@ -79,6 +81,7 @@ function addEventlistenersToButtons() {
     });
 }
 
+//Her defineres funktionen der filterere indholdet i den valgte kategori
 function filterBTNs() {
     filter = this.dataset.kategori;
     document.querySelector("h3").textContent = this.textContent;
@@ -86,5 +89,5 @@ function filterBTNs() {
         btn.classList.remove("valgt");
     })
     this.classList.add("valgt");
-    visPersoner();
+    visOpskrifter();
 }

@@ -23,6 +23,7 @@ p {
 #overskrift {
     font-size: 2.5em;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 
@@ -150,3 +151,67 @@ nav {
 
 
 /*------------------------ DESIGN GUIDE SLUT-----------------------*/
+
+
+
+
+
+
+/*------------------------  KODE START-----------------------*/
+#header_design {
+    border-bottom: 2px solid black;
+}
+
+
+#kode_section,
+#kode_section2,
+#kode_section3,
+#kode_section4,
+#kode_section5 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+#kode_section img {
+    width: 60%;
+    height: 50%;
+}
+
+
+#kode_section2 img {
+    width: 60%;
+    height: 50%;
+}
+
+#kode_section3 img {
+    width: 70%;
+    height: 50%;
+}
+
+
+
+
+/*------------------------  KODE SLUT-----------------------*/
+
+
+
+
+
+/*------------------------ TEST START -----------------------*/
+
+#test_section {
+ display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#test_section img {
+   width: 50%;
+    padding-top: 30px;
+}
+
+
+
+/*------------------------ TEST SLUT-----------------------*/
