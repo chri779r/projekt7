@@ -11,13 +11,11 @@
 
 <body>
     <header>
-
-
-
+        <!--Navigationen med klikbart logo som fører til forsiden-->
         <nav role="navigation">
-            <div class="logo">
-                <a href="index.html"> <img src="logo.png" alt=""></a>
 
+            <div class="logo-nav">
+                <a href="index.html"> <img src="logo.png" alt=""></a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Hjem</a></li>
@@ -25,6 +23,7 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="om.html">Om mig</a></li>
             </ul>
+            <!--Burgermenu - som vises i mobilversionen-->
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -33,10 +32,8 @@
         </nav>
     </header>
 
-
     <main>
-
-        <!--FILTER / KNAPPERNE-->
+        <!--Filteringsknapperne med data-atributter-->
         <div id="filterBtns">
             <button class="filter valgt" data-kategori="alle">Alle</button>
             <button class="filter" data-kategori="brød">Brød</button>
@@ -46,36 +43,20 @@
             <button class="filter" data-kategori="kødretter">Kødretter</button>
         </div>
 
-
         <div class="menu">
             <h3> Opskrifter </h3>
-
-
         </div>
-
-
-
-
+        <!--        En tom container hvori der gøres plads til at loade opskrifterne ind med JSON-->
         <section class="content">
-
         </section>
 
-
-        <!--NAVN OG BILLEDE PÅ LOOP VIEW-->
+        <!--Template taggets indhold er en html skabelon for hver enkelt opskrift - som her vises i loop view -->
         <template>
-
-
             <article id="info">
-
                 <img src="" alt="">
-
                 <h2 class="navn"></h2>
-
-
             </article>
         </template>
-
-
     </main>
 
 
@@ -101,6 +82,4 @@
     </footer>
 
     <script src="script.js"></script>
-</body>
-
-</html>
+</body></html>

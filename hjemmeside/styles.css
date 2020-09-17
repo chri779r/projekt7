@@ -254,12 +254,8 @@ footer {
 
 
 
-.logo img {
-    width: 20%;
-    position: absolute;
-    top: 15px;
-    left: 50px;
-    z-index: 1;
+.logo-nav img {
+    width: 28%;
 }
 
 
@@ -267,21 +263,43 @@ footer {
 
 /***************************************** OPSKRIFT-SIDE ********************************/
 
+/*Her sørges der for at filter-menuen centereres og at den ikke ligger oppe under logoet*/
 #filterBtns {
     display: flex;
     justify-content: center;
     padding-top: 20vh;
 }
 
+/*Her styles den enkelte knap til at have luft omkring sig*/
 #filterBtns button {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    width: 125px;
     padding: 20px;
+    margin: 5px;
+    background-color: #fff;
+    border: 2px solid #7CB2C2;
+    color: #7CB2C2;
+    transition: .35s ease-in;
+    border-radius: 50px 15px;
 }
 
+#filterBtns button:hover {
+    background-color: #7CB2C2;
+    color: #FFF9F0;
+    border: 2px solid #7CB2C2;
+
+}
+
+/*Menuoverskrit styles til at have omkringliggende luft, samt indrykning */
 .menu {
     padding: 2vh;
     padding-left: 10vw;
 }
 
+/*Alt indholdet styles med grid for en responsiv opsætning og der sørges for omk*/
 .content {
     max-width: 1200px;
     margin: 0 auto;
@@ -292,16 +310,19 @@ footer {
     grid-auto-rows: 240px;
 }
 
+/*Her sørges der for at billederne tilpasses til den samme størrelse*/
 .content img {
     object-fit: cover;
     width: 100%;
     height: 95%;
 }
 
+/*Mere padding/luft omkring*/
 #info {
     padding-bottom: 10px;
 }
 
+/*Definering af font samt font-størrelse*/
 #info h2 {
     font-family: 'Roboto-slab', serif;
     font-size: 1.2rem;
