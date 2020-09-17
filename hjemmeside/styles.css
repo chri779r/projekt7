@@ -69,15 +69,20 @@ nav {
     font-size: 1.07rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    border: 0.2em solid #7CB2C2;
+    transition: all .3s ease;
+
+
+
 }
 
 .nav-links li {
     list-style: none;
 }
 
-nav-links a:hover {
-    color: rgb(81, 85, 115);
-    background-color: #FFF9F0;
+.nav-links a:hover {
+    border: 0.2em solid #FFF9F0;
+
 }
 
 
@@ -241,24 +246,28 @@ footer {
 
 a.button1 {
     position: absolute;
-    top: 92vh;
+    top: 90vh;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1.35em 2.2em;
-    border: 0.2em solid #F2F2F2;
+    border: 0.2em solid #7CB2C2;
+    background-color: #FFF9F0;
     margin: 0 0.3em 0.3em 0;
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'oswald', sans-serif;
-    font-size: 15px;
-    color: #F2F2F2;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.07rem;
+    letter-spacing: 2px;
+    color: #8C0E08;
     transition: all 0.2s;
 }
 
 a.button1:hover {
-    color: #205D55;
-    background-color: #F2F2F2;
+    color: #7CB2C2;
+    background-color: #FFF9F0;
+    border: 0.2em solid #8C0E08;
+
 }
 
 #splash_box {
@@ -357,13 +366,13 @@ a.button1:hover {
 #filterBtns button:hover {
     background-color: #7CB2C2;
     color: #FFF9F0;
-    border: 2px solid #7CB2C2;
+    border: 2px solid #8C0E08;
 }
 
 #filterBtns .valgt {
     background-color: #7CB2C2;
     color: #FFF9F0;
-    border: 2px solid #7CB2C2;
+    border: 2px solid #8C0E08;
 }
 
 @media screen and (max-width:1024px) {
