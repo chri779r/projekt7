@@ -1,4 +1,5 @@
 //---------------------------BURGER MENU---------------------//
+//Lånt fra Christians portfolio
 
 //Const er som var, bare uden at kunne ændre på parametrene. (block scope)
 // () => er shortcode og kalder funktionen [function()]
@@ -16,7 +17,7 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
     });
 }
-
+//her starter animationen på hamburger
 function setStyleLink(el, index) {
     if (el.style.animation) {
         el.style.animation = "";
