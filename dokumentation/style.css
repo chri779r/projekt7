@@ -96,10 +96,13 @@ nav {
 #design_section2,
 #design_section3,
 #design_section4,
-#design_section5 {
+#design_section5,
+#design_section6 {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #design_section img {
@@ -123,6 +126,11 @@ nav {
     height: 50%;
 }
 
+#design_section6 img {
+    width: 30%;
+    height: 50%;
+    margin: 10px 10px;
+}
 
 
 
@@ -258,13 +266,13 @@ h2 {
 /*------------------------ TEST START -----------------------*/
 
 #test_section {
- display: flex;
+    display: flex;
     flex-wrap: wrap;
     padding: 20px;
 }
 
 #test_section img {
-   width: 50%;
+    width: 50%;
     padding-top: 30px;
 }
 
