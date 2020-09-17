@@ -65,15 +65,13 @@ nav {
     color: #FFF9F0;
     text-decoration: none;
     font-family: 'Dancing Script', cursive;
-    padding: 10px;
+    padding: 15px;
     font-size: 1.07rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    border: 0.2em solid #7CB2C2;
-    transition: all .3s ease;
-
-
-
+    border: 3px solid #7CB2C2;
+    transition: all .6s ease;
+    border-radius: 15px;
 }
 
 .nav-links li {
@@ -81,8 +79,12 @@ nav {
 }
 
 .nav-links a:hover {
-    border: 0.2em solid #FFF9F0;
-
+    border: 3px solid #8C0E08;
+    background-color: #FFF9F0;
+    color: #7CB2C2;
+    -webkit-box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.75);
 }
 
 
@@ -253,14 +255,17 @@ a.button1 {
     border: 0.2em solid #7CB2C2;
     background-color: #FFF9F0;
     margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Dancing Script', cursive;
     font-size: 1.07rem;
     letter-spacing: 2px;
     color: #8C0E08;
-    transition: all 0.2s;
+    transition: all .8s;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.75);
 }
 
 a.button1:hover {
@@ -359,8 +364,11 @@ a.button1:hover {
     background-color: #fff;
     border: 2px solid #7CB2C2;
     color: #7CB2C2;
-    transition: .35s ease-in;
-    border-radius: 50px 15px;
+    transition: .5s ease-in;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.75);
 }
 
 #filterBtns button:hover {
@@ -647,7 +655,7 @@ a.button1:hover {
     border: 2px solid #7CB2C2;
     color: #FFF9F0;
     transition: .35s ease-in;
-    border-radius: 50px 15px;
+    border-radius: 15px;
     margin: 40px 0;
     margin-left: 20px;
 }
@@ -657,6 +665,9 @@ a.button1:hover {
 
     color: #7CB2C2;
     border: 2px solid #7CB2C2;
+    -webkit-box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.75);
 
 }
 
