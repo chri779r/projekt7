@@ -225,11 +225,41 @@ footer {
 }
 
 /***************************************** FORSIDE ********************************/
-#splash img {
-    width: 100%;
-    margin-top: -300px;
+#splash {
+    background-image: url(imgs/splash_img.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    max-width: none;
+    background-position: center;
 }
 
+
+#splash .column img {
+    width: 100%;
+}
+
+a.button1 {
+    position: absolute;
+    top: 92vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.35em 2.2em;
+    border: 0.2em solid #F2F2F2;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'oswald', sans-serif;
+    font-size: 15px;
+    color: #F2F2F2;
+    transition: all 0.2s;
+}
+
+a.button1:hover {
+    color: #205D55;
+    background-color: #F2F2F2;
+}
 
 #splash_box {
     padding: 20px;
