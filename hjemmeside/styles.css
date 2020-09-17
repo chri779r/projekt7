@@ -216,7 +216,7 @@ footer {
     color: white;
 }
 
-@media screen and (max-width:1024px) {
+<<<<<<< HEAD======= > > > > > > > origin/master @media screen and (max-width:1024px) {
     .fcontainer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -228,6 +228,7 @@ footer {
 
 #splash img {
     width: 100%;
+    margin-top: -160px;
 }
 
 
@@ -604,9 +605,9 @@ footer {
     width: 125px;
     padding: 20px;
     margin: 5px;
-    background-color: #fff;
+    background-color: #7CB2C2;
     border: 2px solid #7CB2C2;
-    color: #7CB2C2;
+    color: #FFF9F0;
     transition: .35s ease-in;
     border-radius: 50px 15px;
     margin: 40px 0;
@@ -614,8 +615,9 @@ footer {
 }
 
 #single_view button:hover {
-    background-color: #7CB2C2;
-    color: #FFF9F0;
+    background-color: #fff;
+
+    color: #7CB2C2;
     border: 2px solid #7CB2C2;
 
 }
