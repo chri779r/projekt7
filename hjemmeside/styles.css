@@ -509,32 +509,31 @@ footer {
     margin-bottom: 40px;
 }
 
-<<<<<<< HEAD
 #liste {
     font-family: 'Roboto Slab', sans-serif;
-=======
+}
+
 
 #symboler {
-width: 49%;
-   padding: 20px;
+    width: 49%;
+    padding: 20px;
 }
 
 #liste {
-       padding-top: 30px;
+    padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .dot {
-  height: 25px;
-  width: 25px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
 
 }
 
 #symboler img {
     width: 8%;
->>>>>>> origin/master
 }
