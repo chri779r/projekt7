@@ -35,14 +35,33 @@
 
 
     <main>
+
+
+
+
+
+
+
         <article id="single_view">
             <h2></h2>
-            <div id="opskrifter_1"><img src="" alt="">
-                <div id="liste"></div>
+            <div id="opskrifter_1">
+               <img src="" alt="">
+
+              <div id="symboler">
+             <p><img src="tid.svg"> 30 minutter </p>
+             <p><img src="antal.svg"> 4 personer </p>
+           <span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+
+               <div id="liste"></div>
+                 </div>
             </div>
-            <div id="opskrifter_2">
-                <p> </p>
-            </div>
+
+
+
+                <p id="opskrifter_2"> </p>
+
             <button>Tilbage</button>
         </article>
     </main>
@@ -93,7 +112,7 @@
                     const myArticle = document.querySelector("article");
                     myArticle.querySelector("h2").textContent = person.gsx$navn.$t;
                     myArticle.querySelector("#liste").innerHTML = person.gsx$opskrift.$t;
-                    myArticle.querySelector("p").textContent = person.gsx$fremgangsmåde.$t;
+                    myArticle.querySelector("#opskrifter_2").textContent = person.gsx$fremgangsmåde.$t;
                     myArticle.querySelector("img").src = "imgs/small/" + person.gsx$billede.$t + ".png";
 
                     document.querySelector("button").addEventListener("click", function() {

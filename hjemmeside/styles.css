@@ -489,6 +489,8 @@ color: white;}
     padding-top: 40px;
     margin: 0 auto;
     max-width: 1200px;
+
+
 }
 
 #opskrifter_1 {
@@ -506,4 +508,29 @@ color: white;}
     font-size: 3rem;
     text-align: center;
     margin-bottom: 40px;
+}
+
+
+#symboler {
+width: 49%;
+   padding: 20px;
+}
+
+#liste {
+       padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+
+}
+
+#symboler img {
+    width: 8%;
 }
