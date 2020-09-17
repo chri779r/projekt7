@@ -169,10 +169,10 @@ nav-links a:hover {
 
 footer {
     background: #7CB2C2;
-    /*    position: fixed;*/
     width: 100vw;
     bottom: 0;
     padding: 20px;
+    position: relative;
 }
 
 .fcontainer {
