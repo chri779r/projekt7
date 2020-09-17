@@ -181,9 +181,12 @@ footer {
 
 .box2 img {
     height: 30px;
-    width: 30px;
+    width: 50px;
 }
 
+.box2, .box1, .box3 {
+    justify-self: center;
+}
 
 
 
