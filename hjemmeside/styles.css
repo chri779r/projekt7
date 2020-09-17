@@ -252,13 +252,9 @@ footer {
 }
 
 
-
-
-
 .logo-nav img {
     width: 30%;
 }
-
 
 
 
@@ -341,6 +337,8 @@ footer {
 
     padding: 6vh;
     margin-top: 6vh;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
