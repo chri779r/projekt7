@@ -216,6 +216,14 @@ footer {
     color: white;
 }
 
+@media screen and (max-width:1024px) {
+    .fcontainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
+
 /***************************************** FORSIDE ********************************/
 
 #splash img {
@@ -282,7 +290,11 @@ footer {
     margin-top: 5px;
 }
 
-
+@media screen and (max-width:1024px) {
+    #forside_billeder img {
+        width: 50%;
+    }
+}
 
 /***************************************** OPSKRIFT-SIDE ********************************/
 
@@ -290,7 +302,7 @@ footer {
 #filterBtns {
     display: flex;
     justify-content: center;
-    padding-top: 20vh;
+    padding-top: 10vh;
 }
 
 /*Her styles den enkelte knap til at have luft omkring sig*/
@@ -316,6 +328,14 @@ footer {
 
 }
 
+@media screen and (max-width:1024px) {
+    #filterBtns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
+
 /*Menuoverskrit styles til at have omkringliggende luft, samt indrykning */
 .menu {
     padding: 2vh;
@@ -331,6 +351,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: 240px;
+    margin-bottom: 40px;
 }
 
 /*Her sørges der for at billederne tilpasses til den samme størrelse*/
@@ -435,11 +456,10 @@ footer {
 
 /***************************************** OM-SIDE ********************************/
 
-
 #om_section {
-
     padding: 6vh;
-    margin-top: 6vh;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
