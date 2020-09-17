@@ -269,12 +269,18 @@ h2 {
 
 /*------------------------ TEST START -----------------------*/
 
-#test_section {
+#test_section,
+#lyd_test {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+#lyd_test h1 {
+    width: 100%;
+    font-size: 2rem;
 }
 
 #test_section img {
