@@ -180,6 +180,9 @@ footer {
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin: auto;
+      -webkit-box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.75);
 }
 
 .box2 img {
@@ -207,6 +210,12 @@ footer {
     list-style: none;
 
 }
+
+
+.box3 p {
+color: white;}
+
+
 
 /***************************************** FORSIDE ********************************/
 
@@ -372,7 +381,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     padding-top: 20px;
-    border-bottom: 2px solid black;
+
 }
 
 
@@ -410,6 +419,19 @@ footer {
     }
 }
 
+
+.parallax {
+  background-image: url("parallax_billede.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 /***************************************** OM-SIDE ********************************/
