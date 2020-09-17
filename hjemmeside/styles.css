@@ -225,10 +225,9 @@ footer {
 }
 
 /***************************************** FORSIDE ********************************/
-
 #splash img {
     width: 100%;
-    margin-top: -160px;
+    margin-top: -300px;
 }
 
 
@@ -257,8 +256,8 @@ footer {
 
 #forside_billeder img {
     object-fit: cover;
-
 }
+
 
 
 .banan {
@@ -346,11 +345,7 @@ footer {
 }
 
 /*Menuoverskrit styles til at have omkringliggende luft, samt indrykning */
-.menu {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-left: 10px;
-}
+
 
 /*Alt indholdet styles med grid for en responsiv opsætning og der sørges for omk*/
 .content {
