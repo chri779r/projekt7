@@ -293,6 +293,11 @@ footer {
 @media screen and (max-width:1024px) {
     #forside_billeder img {
         width: 50%;
+        margin-left: 60px;
+    }
+
+    #forside_billeder h3 {
+        margin-left: 60px;
     }
 }
 
@@ -537,7 +542,13 @@ footer {
     margin-top: 20px;
 }
 
-#liste {
+#frem h3 {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+#liste,
+#frem h3,
+#symboler h3 {
     font-family: 'Roboto Slab', sans-serif;
 }
 
