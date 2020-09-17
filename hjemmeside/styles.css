@@ -187,12 +187,26 @@ footer {
     width: 50px;
 }
 
-.box2, .box1, .box3 {
+.box2,
+.box1,
+.box3 {
     justify-self: center;
 }
 
+.footer-links a {
+    color: #FFF9F0;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    padding: 10px;
+    font-size: 1.07rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
+.footer-links li {
+    list-style: none;
 
+}
 
 /***************************************** FORSIDE ********************************/
 
