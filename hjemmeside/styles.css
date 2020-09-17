@@ -619,3 +619,17 @@ footer {
     border: 2px solid #7CB2C2;
 
 }
+
+
+@media screen and (max-width:1024px) {
+    #single_view {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    #single_view img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+}
