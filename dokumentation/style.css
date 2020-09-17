@@ -138,6 +138,10 @@ nav {
     width: 25%;
 }
 
+h2 {
+    width: 100%;
+}
+
 .logo,
 .font,
 .farver,
