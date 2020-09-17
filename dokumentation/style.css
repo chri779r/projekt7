@@ -38,7 +38,7 @@ p {
 
 
 /*---------------------------- HEADER START-------------------------*/
-a {
+nav a {
     font-family: 'Roboto Slab', serif;
     font-size: 1.5em;
     background: darkgrey;
@@ -79,6 +79,11 @@ nav {
     padding: 25px;
 }
 
+#link {
+    padding: 25px;
+    padding-bottom: 100px;
+}
+
 /*---------------------------- FORSIDE SLUT-------------------------*/
 
 
@@ -97,7 +102,8 @@ nav {
 #design_section3,
 #design_section4,
 #design_section5,
-#design_section6 {
+#design_section6,
+#design_section7 {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
@@ -127,6 +133,11 @@ nav {
 }
 
 #design_section6 img {
+    width: 30%;
+    height: 50%;
+}
+
+#design_section7 img {
     width: 30%;
     height: 50%;
     margin: 10px 10px;
@@ -231,6 +242,9 @@ h2 {
 
 }
 
+.knapper img {
+    width: 100%;
+}
 
 /*------------------------ DESIGN GUIDE SLUT-----------------------*/
 
@@ -302,6 +316,10 @@ h2 {
 #test_section img {
     width: 50%;
     padding-top: 30px;
+}
+
+audio {
+    width: 100%;
 }
 
 
