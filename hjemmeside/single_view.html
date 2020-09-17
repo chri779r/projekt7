@@ -45,22 +45,23 @@
         <article id="single_view">
             <h2></h2>
             <div id="opskrifter_1">
-               <img src="" alt="">
+                <img src="" alt="">
 
-              <div id="symboler">
-             <p><img src="tid.svg"> 30 minutter </p>
-             <p><img src="antal.svg"> 4 personer </p>
-           <span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-
-               <div id="liste"></div>
-                 </div>
+                <div id="symboler">
+                    <p><img src="tid.svg"> 30 minutter </p>
+                    <p><img src="antal.svg"> 4 personer </p>
+                    <span class="dot dot1"></span>
+                    <span class="dot dot2"></span>
+                    <span class="dot dot3"></span>
+                    <h3>Ingredienser</h3>
+                    <div id="liste"></div>
+                </div>
             </div>
 
-
-
-                <p id="opskrifter_2"> </p>
+            <div id="frem">
+                <h3>Fremgangsmåde</h3>
+                <p id="opskrifter_2"> /p>
+            </div>
 
             <button>Tilbage</button>
         </article>
@@ -112,7 +113,7 @@
                     const myArticle = document.querySelector("article");
                     myArticle.querySelector("h2").textContent = person.gsx$navn.$t;
                     myArticle.querySelector("#liste").innerHTML = person.gsx$opskrift.$t;
-                    myArticle.querySelector("#opskrifter_2").textContent = person.gsx$fremgangsmåde.$t;
+                    myArticle.querySelector("#opskrifter_2").innerHTML = person.gsx$fremgangsmåde.$t;
                     myArticle.querySelector("img").src = "imgs/small/" + person.gsx$billede.$t + ".png";
 
                     document.querySelector("button").addEventListener("click", function() {
@@ -124,5 +125,8 @@
 
 
         }
+
     </script>
-</body></html>
+</body>
+
+</html>

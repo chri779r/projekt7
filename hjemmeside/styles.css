@@ -488,17 +488,21 @@ footer {
     padding-top: 40px;
     margin: 0 auto;
     max-width: 1200px;
-
-
 }
 
 #opskrifter_1 {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 20px;
 }
 
 #opskrifter_2 {
-    padding: 50px;
+    line-height: 1.6;
+}
+
+#frem {
+    padding-left: 20px;
+    margin-top: 30px;
 }
 
 #single_view h2 {
@@ -507,6 +511,10 @@ footer {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 40px;
+}
+
+#symboler h3 {
+    margin-top: 20px;
 }
 
 #liste {
@@ -520,7 +528,6 @@ footer {
 }
 
 #liste {
-    padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -528,12 +535,56 @@ footer {
 .dot {
     height: 25px;
     width: 25px;
-    background-color: black;
     border-radius: 50%;
     display: inline-block;
+    margin-top: 20px;
+}
+
+.dot1 {
+    background-color: #F2DCB7;
+}
+
+.dot2 {
+    background-color: #FF7226;
+
+}
+
+.dot3 {
+    background-color: #B31009;
 
 }
 
 #symboler img {
     width: 8%;
+}
+
+#single_view button {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+/*Her styles den enkelte knap til at have luft omkring sig*/
+#single_view button {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    width: 125px;
+    padding: 20px;
+    margin: 5px;
+    background-color: #fff;
+    border: 2px solid #7CB2C2;
+    color: #7CB2C2;
+    transition: .35s ease-in;
+    border-radius: 50px 15px;
+    margin: 40px 0;
+    margin-left: 20px;
+}
+
+#single_view button:hover {
+    background-color: #7CB2C2;
+    color: #FFF9F0;
+    border: 2px solid #7CB2C2;
+
 }
