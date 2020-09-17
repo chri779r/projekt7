@@ -180,6 +180,9 @@ footer {
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin: auto;
+      -webkit-box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.75);
 }
 
 .box2 img {
@@ -207,6 +210,12 @@ footer {
     list-style: none;
 
 }
+
+
+.box3 p {
+color: white;}
+
+
 
 /***************************************** FORSIDE ********************************/
 
