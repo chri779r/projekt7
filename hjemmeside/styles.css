@@ -180,7 +180,7 @@ footer {
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin: auto;
-      -webkit-box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.75);
 }
@@ -213,7 +213,8 @@ footer {
 
 
 .box3 p {
-color: white;}
+    color: white;
+}
 
 /***************************************** FORSIDE ********************************/
 
@@ -419,16 +420,16 @@ color: white;}
 
 
 .parallax {
-  background-image: url("parallax_billede.jpg");
+    background-image: url("parallax_billede.jpg");
 
-  /* Set a specific height */
-  min-height: 500px;
+    /* Set a specific height */
+    min-height: 500px;
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -504,4 +505,8 @@ color: white;}
     font-size: 3rem;
     text-align: center;
     margin-bottom: 40px;
+}
+
+#liste {
+    font-family: 'Roboto Slab', sans-serif;
 }
